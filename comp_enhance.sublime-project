@@ -1,0 +1,36 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+		},
+		{
+			"path": "C:\\Users\\user\\bin\\odin\\examples",
+		},
+		{
+			"path": "C:\\Users\\user\\bin\\odin\\core",
+		},
+		{
+			"path": "C:\\Users\\user\\bin\\odin\\vendor",
+		},
+	],
+	"build_systems":
+	[
+		{
+			"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
+			"name": "Odin Run",
+			"shell_cmd": "odin run .",
+			// ANSI code escaping
+			"target": "ansi_color_build",
+			"syntax": "Packages/ANSIescape/ANSI.sublime-syntax",
+		},
+		{
+			"file_regex": "^(.+)\\(([0-9]+):([0-9]+)\\) (.+)$",
+			"name": "Odin Build",
+			"shell_cmd": "odin build . -debug",
+			// ANSI code escaping
+			"target": "ansi_color_build",
+			"syntax": "Packages/ANSIescape/ANSI.sublime-syntax",
+		}
+	],
+}
